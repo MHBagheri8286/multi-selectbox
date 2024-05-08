@@ -1,24 +1,63 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SelectBox from './components/selectBox';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main className='wrapper'>
+        <SelectBox
+          style={{ width: '200px' }}
+          defaultValue={['china']}
+          options={[{
+            label: 'China',
+            value: 'china',
+            emoji: '🇨🇳',
+            desc: 'China (中国)',
+          },
+          {
+            label: 'USA',
+            value: 'usa',
+            emoji: '🇺🇸',
+            desc: 'USA (美国)',
+          },
+          {
+            label: 'Iran',
+            value: 'iran',
+            emoji: '🇨🇳',
+            desc: 'China (中国)',
+          },
+          {
+            label: 'UAE',
+            value: 'uae',
+            emoji: '🇺🇸',
+            desc: 'USA (美国)',
+          },
+          {
+            label: 'Italy',
+            value: 'italy',
+            emoji: '🇨🇳',
+            desc: 'China (中国)',
+          },
+          {
+            label: 'France',
+            value: 'france',
+            emoji: '🇺🇸',
+            desc: 'USA (美国)',
+          },
+          {
+            label: 'Japan',
+            value: 'japan',
+            emoji: '🇨🇳',
+            desc: 'China (中国)',
+          },
+          {
+            label: 'Germany',
+            value: 'germany',
+            emoji: '🇺🇸',
+            desc: 'USA (美国)',
+          },]}
+        />
+      </main>
     </div>
   );
 }

@@ -1,0 +1,64 @@
+.select-box {
+    display: flex;
+    position: relative;
+
+    .selector-section {
+        position: relative;
+        display: flex;
+        flex: auto;
+        flex-wrap: wrap;
+        max-width: 100%;
+        gap: 5px;
+
+        .selection-overflow-item {
+            flex: none;
+            align-self: center;
+            max-width: 100%;
+            display: inline-flex;
+
+            .selection-search {
+
+                input {
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    appearance: none;
+                }
+            }
+        }
+
+
+    }
+
+    .option-list-section {
+        position: absolute;
+        visibility: hidden;
+        top: calc(100% + 10px);
+        width: 100%;
+        height: 100px;
+        overflow: auto;
+
+        &.show {
+            visibility: visible;
+        }
+
+        .option-list-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            .option-list-item {
+
+                &.option-active {
+                    background-color: aqua;
+                }
+
+                &.option-selected {
+                    background-color: grey;
+                }
+            }
+        }
+    }
+}
