@@ -43,14 +43,10 @@ const MultiSelectBox: FC<ISelectBoxProps> = (props) => {
 
     const onKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
         const keyCode = e.key;
-        switch (keyCode) {
-            case "Enter":
-                if (inputRef.current?.value) {
-                    options.unshift({ label: inputRef.current?.value, value: inputRef.current?.value });
-                    setOptions(options.slice());
-                }
-                resetInputValue();
-                break;
+        if(keyCode === "Enter" && inputRef.current?.value && !filteredOptions.length){
+            options.unshift({ label: inputRef.current?.value, value: inputRef.current?.value });
+            setOptions(options.slice());
+            resetInputValue();
         }
     }
 
