@@ -1,8 +1,8 @@
 # Getting Started with Multi SelectBox App
 
 Multi Selectbox with features:
-Searchable component 
-Allow user to select tags from list or add custom tags
+Searchable component,
+Allow user to select tags from list or add custom tags,
 Remove selected options from list
 ### `npm start`
 
