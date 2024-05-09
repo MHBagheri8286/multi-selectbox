@@ -1,0 +1,34 @@
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --font-weight: 500;
+  --color-black: #333;
+  --color-dark-gray: #777;
+  --color-light-gray: #eaeaea;
+  --color-gray: #f5f4f4;
+  --color-light-blue: #f3f4ff;
+  --color-blue: #6f83c4;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}

@@ -1,0 +1,16 @@
+// Variables
+$icon-size: 24px;
+$icon-default-color: var(--color-light-gray);
+
+.icon {
+    font-size: 13px;
+    font-family: 'icon-font' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

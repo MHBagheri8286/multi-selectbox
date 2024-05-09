@@ -6,10 +6,8 @@ export function searchInAllProperties<T>(record: T, term: string) {
 }
 
 export function getTextWidth(str: string) {
-
     const text = document.createElement("span");
     document.body.appendChild(text);
-
     text.style.font = "BlinkMacSystemFont";
     text.style.fontSize = 18 + "px";
     text.style.height = 'auto';

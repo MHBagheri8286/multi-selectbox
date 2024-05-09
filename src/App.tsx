@@ -1,61 +1,19 @@
-import './App.css';
-import SelectBox from './components/selectBox';
+import './assets/styles/app.css';
+import './assets/styles/iconfont.css';
+import MultiSelectBox from './components/multi-selectbox';
+import SampleData from './sampleData';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
+      <header>
+        <h1>Multi SelectBox</h1>
+      </header>
       <main className='wrapper'>
-        <SelectBox
-          style={{ width: '200px' }}
-          defaultValue={['china']}
-          options={[{
-            label: 'China',
-            value: 'china',
-            emoji: '🇨🇳',
-            desc: 'China (中国)',
-          },
-          {
-            label: 'USA',
-            value: 'usa',
-            emoji: '🇺🇸',
-            desc: 'USA (美国)',
-          },
-          {
-            label: 'Iran',
-            value: 'iran',
-            emoji: '🇨🇳',
-            desc: 'China (中国)',
-          },
-          {
-            label: 'UAE',
-            value: 'uae',
-            emoji: '🇺🇸',
-            desc: 'USA (美国)',
-          },
-          {
-            label: 'Italy',
-            value: 'italy',
-            emoji: '🇨🇳',
-            desc: 'China (中国)',
-          },
-          {
-            label: 'France',
-            value: 'france',
-            emoji: '🇺🇸',
-            desc: 'USA (美国)',
-          },
-          {
-            label: 'Japan',
-            value: 'japan',
-            emoji: '🇨🇳',
-            desc: 'China (中国)',
-          },
-          {
-            label: 'Germany',
-            value: 'germany',
-            emoji: '🇺🇸',
-            desc: 'USA (美国)',
-          },]}
+        <MultiSelectBox
+          style={{ width: 300 , minHeight: 35}}
+          defaultValue={['science']}
+          options={SampleData}
         />
       </main>
     </div>
